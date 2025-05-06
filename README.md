@@ -1,2 +1,12 @@
 # YOLOv5_Study
-To record the study of YOLOv5
+此文档主要用于记录YOLOv5的学习过程。目前主要还是从TensorRT加速网络的角度入手。但目前发现，不把网络内部的结构吃透，根本没法搞清楚如何修改和优化。因此，考虑作为一个长期的课题，进行探讨和分析。
+
+## 1. 关于历史版本的问题。
+
+YOLOv5是YOLO系列目标检测网络的经典之作。有必要将该项目完全吃透，以提升后续修改和使用其他类似目标检测网络的能力。
+
+目前找到的网上教程是2022年以及2023年的版本（主要是恩培教程，以C++和TensorRT为主的一个教程）。其中的一些export.patch文件已经不是当时的版本。需要通过github的历史版本寻找当时的版本。虽然当时的版本有很多bug在后续时间修复了，但目前最合适的思路仍然是先将当时的版本在本地复现，然后再探索目前版本与当时版本的区别。
+
+当前版本的地址是：https://github.com/ultralytics/yolov5
+
+历史版本的地址是：https://github.com/ultralytics/yolov5/tree/7cef03dddd6fba26fff6748ed1cfdd18208c193e
